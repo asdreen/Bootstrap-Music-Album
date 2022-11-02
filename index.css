@@ -109,24 +109,57 @@ input {
 }
 
 #favoriteMusic {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
 }
 
 .sign {
   width: 30px;
   position: absolute;
-  left: 7.5em;
+  left: 10.5em;
   cursor: pointer;
 }
 
 .favP {
   font-weight: bold;
-  color: black;
+  color: green;
   position: absolute;
 }
 
 .favS {
   position: absolute;
   top: 1.3em;
+}
+
+.shameP {
+  margin-top: -1.5em;
+  color: bisque;
+}
+
+.shameS {
+  margin-left: 9.5em;
+  margin-top: -2.5em;
+  color: bisque;
+}
+
+#best {
+  border-radius: 50px;
+}
+
+.bestP {
+  background: wheat;
+  width: 100px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.lastF {
+  height: 300px;
+  width: 300px;
+  border: none;
+  object-fit: cover;
 }
