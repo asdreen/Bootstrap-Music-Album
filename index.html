@@ -14,36 +14,126 @@
     <title>Music Album</title>
   </head>
   <body>
-    <img
-      src="./photo-bg.webp"
-      alt=""
-      class="img-fluid"
-      style="
-        object-fit: cover;
-        object-position: top;
-        height: 300px;
-        width: 100%;
-      "
-    />
-    <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand" href="#">
-        <img
-          src="/docs/4.6/assets/brand/bootstrap-solid.svg"
-          width="30"
-          height="30"
-          alt=""
-        />
-      </a>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="#">Music<span>Hites</span></a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >HOME <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">REVIEWS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">FAVORITES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">HALL OF SHAME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">BEST ARTIST</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
     </nav>
+    <img src="./assets/image 1.jpg" alt="/" class="img-fluid" />
+
     <div class="container">
-      <h1 class="display-4">hello</h1>
+      <div class="row row-cols-4">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <img
+              src="./assets/Dua Lipa.webp"
+              class="card-img-top"
+              alt="image1"
+            />
+            <div class="card-body">
+              <h5 class="card-title">New Rules</h5>
+              <p class="card-text">
+                <span>Dua Lipa </span> 33k likes <span>12 Songs</span> 60 min 34
+                sec
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <img
+              src="./assets/Rita Ora.png"
+              class="card-img-top"
+              alt="image2"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Phoenix</h5>
+              <p class="card-text">
+                <span>Rita Ora </span> 31k likes <span>13 Songs</span> 1hr 10
+                min
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <img
+              src="./assets/Bebe Rexha.jpeg"
+              class="card-img-top"
+              alt="image3"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Expectations</h5>
+              <p class="card-text">
+                <span>Bebe Rexha</span> 26k likes <span>14 Songs</span> 1hr 20
+                min
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <img src="./assets/Ava Max.jpg" class="card-img-top" alt="image4" />
+            <div class="card-body">
+              <h5 class="card-title">heaven & Hell</h5>
+              <p class="card-text">
+                <span>Ava Max </span> 19k likes <span>11 Songs</span> 50 min 34
+                sec
+              </p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="col-2"></div>
-    <div class="col-2"></div>
-    <div class="col-2"></div>
-    <div class="col-2"></div>
-    <div class="col-2"></div>
-    <div class="col-2"></div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
