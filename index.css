@@ -6,10 +6,43 @@ body {
   background-color: #6610f2;
 }
 
+.navbar {
+  background: rgba(42, 1, 74, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
+
+.navbar-nav {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+#image {
+  height: 250px;
+}
 .img-fluid {
   object-fit: cover;
-  height: 300px;
+  height: 150px;
   width: 100%;
+}
+
+.card {
+  border-radius: 35px;
+  border: none;
+  margin-top: 2em;
+  background-color: transparent;
+}
+
+.card-body {
+  background-color: #6610f2;
+  border: 1px solid;
+  border-bottom-left-radius: 33px;
+  border-bottom-right-radius: 33px;
 }
 
 .card-img-top {
@@ -27,15 +60,6 @@ body {
   line-height: 1.2;
 }
 
-.nav-item {
-  margin-inline: 2.4em;
-  background-color: #6610f2;
-}
-
-.container {
-  margin-top: 2em;
-}
-
 .form-control {
   background-color: transparent;
 }
@@ -46,4 +70,63 @@ span {
 
 .nav-link {
   color: aquamarine !important;
+}
+
+input {
+  margin-left: -15em;
+}
+
+.remg-review {
+  display: inline-block;
+  height: 300px;
+  width: 300px;
+}
+
+.container {
+  margin-top: 3em;
+}
+
+.rate {
+  vertical-align: middle;
+  text-align: center;
+  color: #fff !important;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold !important;
+  background-color: transparent;
+  height: 2em;
+  width: 2em;
+  line-height: 2em;
+  font-size: 17px;
+  border-radius: 6px;
+  position: absolute;
+  top: 8px;
+  right: 7px;
+  background-color: green;
+}
+
+#reviewImage {
+  border-radius: 20px;
+}
+
+#favoriteMusic {
+  width: 150px;
+  height: 150px;
+}
+
+.sign {
+  width: 30px;
+  position: absolute;
+  left: 7.5em;
+  cursor: pointer;
+}
+
+.favP {
+  font-weight: bold;
+  color: black;
+  position: absolute;
+}
+
+.favS {
+  position: absolute;
+  top: 1.3em;
 }
