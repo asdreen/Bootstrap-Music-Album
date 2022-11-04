@@ -15,7 +15,14 @@
   </head>
   <body>
     <img src="./assets/image 1.jpg" alt="/" class="img-fluid" id="image" />
-    <nav class="navbar navbar-expand-lg">
+<!--.............exercise 1.................-->
+<div class="jumbotron jumbotron-fluid fadeIn">
+  <div class="container">
+    <h1 class="display-4">Fluid jumbotron</h1>
+    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+  </div>
+  
+    </div>    <nav class="navbar navbar-expand-lg">
       <a class="navbar-brand" href="#">Music<span>Hits</span></a>
       <button
         class="navbar-toggler"
@@ -48,19 +55,56 @@
             <a class="nav-link" href="#Best Artist">BEST ARTIST</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form>
+        
       </div>
     </nav>
+  
+
+  <!--.............exercise 4.................-->
+  
+  <table class="table" id="myTable">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name&Title</th>
+        <th scope="col">Duration</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="text" id="firstRow">
+        <th scope="row">1</th>
+        <td>Californation <br> <span>best song evr, Californation</span> </td>
+        <td><span>5:22</span></td>
+      </tr> 
+      
+      
+      <tr class="text" id="secondRow"> 
+        <th scope="row">2</th>
+        <td>Paradise <br> <span>W&W, Sub Zero Project</span>  </td>
+        <td><span>4:22</span></td>
+      </tr>
+      
+      <tr class="text" id="thirdRow">
+        <th scope="row">3</th>
+        <td>David Penn <br> <span>Urban Radio Show 572</span></td>
+        <td> <span>4:35</span> </td>
+      </tr>
+      
+    </tbody>
+  </table>
+  <button class="track" id="addNew" type="button" onclick="addRow()" >Add track</button>
+  <div><button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#firstRow" aria-expanded="false" aria-controls="collapseExample">
+    Remove
+  </button>
+  <button class="btn btn-danger" id="btn1" type="button" data-toggle="collapse" data-target="#secondRow" aria-expanded="false" aria-controls="collapseExample">
+    Remove
+  </button>
+  <button class="btn btn-danger" id="btn2" type="button" data-toggle="collapse" data-target="#thirdRow" aria-expanded="false" aria-controls="collapseExample">
+    Remove
+  </button> </div>
+ 
+  
+  
 
     <div class="container">
       <div class="row row-cols-4">
@@ -249,9 +293,11 @@
                 alt="image6"
                 id="favoriteMusic"
               />
+              <div class="infos">
               <img src="./assets/icons8-play-32.png" alt="" class="sign" />
-              <p class="favP">Denver</p>
-              <span class="favS">Swings</span>
+              <p class="favP">Blurry</p>
+              <span class="favS">Curtis Cole</span></div>
+              <span class="badge badge-pill badge-success">Success</span>
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
@@ -261,9 +307,11 @@
                 class="card-img-top"
                 alt="image6"
                 id="favoriteMusic"
-              /><img src="./assets/icons8-play-32.png" alt="" class="sign" />
-              <p class="favP">Blurry</p>
-              <span class="favS">Curtis Cole</span>
+              /><div class="infos">
+                <img src="./assets/icons8-play-32.png" alt="" class="sign" />
+                <p class="favP">Blurry</p>
+                <span class="favS">Curtis Cole</span></div>
+              <span class="badge badge-pill badge-success">Success</span>
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
@@ -273,9 +321,11 @@
                 class="card-img-top"
                 alt="image6"
                 id="favoriteMusic"
-              /><img src="./assets/icons8-play-32.png" alt="" class="sign" />
-              <p class="favP">Freeze</p>
-              <span class="favS">Jay like the...</span>
+              /><div class="infos">
+                <img src="./assets/icons8-play-32.png" alt="" class="sign" />
+                <p class="favP">Blurry</p>
+                <span class="favS">Curtis Cole</span></div>
+              <span class="badge badge-pill badge-success">Success</span>
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
@@ -285,9 +335,11 @@
                 class="card-img-top"
                 alt="image6"
                 id="favoriteMusic"
-              /><img src="./assets/icons8-play-32.png" alt="" class="sign" />
-              <p class="favP">Waste our time</p>
-              <span class="favS">Jane & The Boy</span>
+              /><div class="infos">
+                <img src="./assets/icons8-play-32.png" alt="" class="sign" />
+                <p class="favP">Blurry</p>
+                <span class="favS">Curtis Cole</span></div>
+              <span class="badge badge-pill badge-success">Success</span>
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
@@ -297,9 +349,11 @@
                 class="card-img-top"
                 alt="image6"
                 id="favoriteMusic"
-              /><img src="./assets/icons8-play-32.png" alt="" class="sign" />
-              <p class="favP">Sunny Summers</p>
-              <span class="favS">Fossounds</span>
+              /><div class="infos">
+                <img src="./assets/icons8-play-32.png" alt="" class="sign" />
+                <p class="favP">Blurry</p>
+                <span class="favS">Curtis Cole</span></div>
+              <span class="badge badge-pill badge-success">Success</span>
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
@@ -309,9 +363,11 @@
                 class="card-img-top"
                 alt="image6"
                 id="favoriteMusic"
-              /><img src="./assets/icons8-play-32.png" alt="" class="sign" />
-              <p class="favP">Waste our time</p>
-              <span class="favS">Jane & The Boy</span>
+              /><div class="infos">
+                <img src="./assets/icons8-play-32.png" alt="" class="sign" />
+                <p class="favP">Blurry</p>
+                <span class="favS">Curtis Cole</span></div>
+              <span class="badge badge-pill badge-success">Success</span>
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
@@ -321,9 +377,11 @@
                 class="card-img-top"
                 alt="image6"
                 id="favoriteMusic"
-              /><img src="./assets/icons8-play-32.png" alt="" class="sign" />
-              <p class="favP">Waste our time</p>
-              <span class="favS">Jane & The Boy</span>
+              /><div class="infos">
+                <img src="./assets/icons8-play-32.png" alt="" class="sign" />
+                <p class="favP">Blurry</p>
+                <span class="favS">Curtis Cole</span></div>
+              <span class="badge badge-pill badge-success">Success</span>
             </div>
           </div>
           <div class="col-sm-6 col-md-4 col-lg-3">
@@ -333,9 +391,11 @@
                 class="card-img-top"
                 alt="image6"
                 id="favoriteMusic"
-              /><img src="./assets/icons8-play-32.png" alt="" class="sign" />
-              <p class="favP">Waste our time</p>
-              <span class="favS">Jane & The Boy</span>
+              /><div class="infos">
+                <img src="./assets/icons8-play-32.png" alt="" class="sign" />
+                <p class="favP">Blurry</p>
+                <span class="favS">Curtis Cole</span></div>
+              <span class="badge badge-pill badge-success">Success</span>
             </div>
           </div>
         </div>
@@ -577,6 +637,46 @@
     <footer>
       still working
     </footer>
+    <script>
+      function deleteRow(r) {
+        var i = r.parentNode.parentNode.rowIndex;
+        document.getElementById("myTable").deleteRow(i);
+      }
+      $(function () {
+
+// Start counting from the third row
+var counter = 3;
+
+$("#addNew").on("click", function (event) {
+    event.preventDefault();
+
+    var newRow = $("<tr>");
+    var cols = '';
+
+    // Table columns
+    cols += '<th scrope="row">' + counter + '</th>';
+    cols += '<td><input class="form-control rounded-0" type="text" name="firstname" placeholder="First name"></td>';
+    cols += '<td><input class="form-control rounded-0" type="text" name="lastname" placeholder="Last name"></td>';
+    cols += '<td><input class="form-control rounded-0" type="text" name="handle" placeholder="Handle"></td>';
+    cols += '<td><button class="btn btn-danger rounded-0" id ="deleteRow"><i class="fa fa-trash"></i></button</td>';
+
+    // Insert the columns inside a row
+    newRow.append(cols);
+
+    // Insert the row inside a table
+    $("table").append(newRow);
+
+    // Increase counter after each row insertion
+    counter++;
+});
+
+// Remove row when delete btn is clicked
+$("table").on("click", "#deleteRow", function (event) {
+    $(this).closest("tr").remove();
+    counter -= 1
+});
+});
+      </script>
     <script
       src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

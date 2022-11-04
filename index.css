@@ -1,9 +1,116 @@
 body {
   position: relative;
   width: 100%;
-  padding-right: 15px;
+
   padding-left: 15px;
   background-color: #6610f2;
+}
+.jumbotron {
+  width: 76%;
+  margin: auto;
+  margin-bottom: -2em;
+  margin-top: 2em;
+  background-color: grey;
+}
+
+/*.........exercise 1 .......... */
+.fadeIn {
+  animation: fade-in 3s 3s backwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*.........exercise 2 .......... */
+.infos {
+  opacity: 0;
+  position: absolute;
+  width: 81%;
+  z-index: 1;
+  transform: translateY(130px);
+  padding: 48px 24px 24px;
+  background-image: linear-gradient(rgba(27, 37, 48, 0), rgb(27, 37, 48) 48px);
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+  overflow: hidden;
+  transition: all 0.2s ease-out;
+}
+
+.card:hover .infos {
+  opacity: 1;
+}
+
+/*.........exercise 3 .......... */
+.badge-success {
+  color: #fff;
+  background-color: #28a745;
+  position: absolute;
+  font-size: 1.1em;
+  border-radius: unset;
+  left: 0em;
+  top: 0;
+}
+/*.........exercise 4 .......... */
+
+.table {
+  width: 76%;
+  margin: auto;
+  margin-top: 4em;
+  margin-bottom: -3em;
+  position: relative;
+}
+.table,
+.table td,
+.table th {
+  border: none;
+}
+
+/*.........exercise 5 .......... */
+.btn {
+  position: absolute;
+  right: 11em;
+  top: 42em;
+}
+#btn1 {
+  top: 46em;
+}
+#btn2 {
+  top: 50em;
+}
+
+/*.........exercise 6 .......... */
+.track {
+  width: 140px;
+  height: 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  margin-left: 57em;
+  margin-top: 5em;
+}
+
+.track:hover {
+  background-color: #2ee59d;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }
 
 .navbar {
@@ -118,6 +225,7 @@ input {
   position: absolute;
   left: 10.5em;
   cursor: pointer;
+  bottom: 0;
 }
 
 .favP {
